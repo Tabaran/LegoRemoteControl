@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Lego Messaging</title>
+</head>
+<body>
+    <h2>Lego Messaging</h2>
+    <br/>
+    <form action="#" th:action="@{/sendMessage}" th:object="${helloMessage}" method="post">
+        <input type="text" th:field="*{name}"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
